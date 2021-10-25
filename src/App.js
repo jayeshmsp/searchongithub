@@ -34,6 +34,7 @@ function App() {
         .catch(function (error) {
           // handle error
           setLoading(false);
+
           console.log(error);
         });
     }
