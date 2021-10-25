@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "precommit": "pretty-quick --staged"
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -44,7 +44,11 @@
   },
   "devDependencies": {
     "husky": "^7.0.4",
+    "lint-staged": "^11.2.4",
     "prettier": "^2.4.1",
     "pretty-quick": "^3.1.1"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
