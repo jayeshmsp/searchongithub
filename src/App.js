@@ -34,7 +34,6 @@ function App() {
         .catch(function (error) {
           // handle error
           setLoading(false);
-          //dsfsdf sdf sdfs
           console.log(error);
         });
     }
