@@ -21,7 +21,7 @@ function App() {
       setLoading(true);
       let fetchUrl =
         "https://api.github.com/search/repositories?q=" + event.target.value;
-      // fetch(fetchUrl).then(res=>console.log(res.json())).catch(err=>console.log(err))
+
       dispatch({ type: "SET_CURRENT_SEARCH", payload: event.target.value });
 
       // axios to fetch the information from the endpoint
